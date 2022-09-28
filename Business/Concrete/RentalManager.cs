@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-    internal class RentalManager:IRentalService
+    public class RentalManager:IRentalService
     {
         IRentalDal _rentalDal;
 
@@ -24,6 +24,11 @@ namespace Business.Concrete
         {
             _rentalDal.Add(rental);
             return new SuccessResult(Messages.RentalAdded);
+        }
+
+        public IDataResult<List<Rental>> GetAll()
+        {
+            return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll(),Messages.RentalsListed);
         }
     }
 }

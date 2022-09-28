@@ -22,8 +22,9 @@ namespace Business.Constants
         internal static string ColorsListed="Colors listed.";
         internal static string ColorListedById="Color listed by id.";
         internal static string ModelDetailsListed="Model details listed.";
-        internal static string UserAdded;
-        internal static string CustomerAdded;
-        internal static string RentalAdded;
+        internal static string UserAdded="User added.";
+        internal static string CustomerAdded="Customer added.";
+        internal static string RentalAdded="Rental added.";
+        internal static string RentalsListed;
     }
 }
