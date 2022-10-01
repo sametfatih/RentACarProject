@@ -8,7 +8,7 @@ namespace Business.Constants
 {
     public static class Messages
     {
-        public static string CarSaved="Car saved.";
+        public static string CarAdded="Car saved.";
         public static string CarNotSaved="Car is not saved.";
         public static string CarDeleted="Car deleted.";
         public static string CarUpdated="Car updated.";

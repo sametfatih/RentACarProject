@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RbrDphIzzY7ppvouJfhBsfrV6mgKMeP74zH17ENWjj+41fa1P8kVSG96Okfb3WtP/+Mt8FxiV/a9A/Z+6sYCsA==",
+  "dgSpecHash": "DmOujce7NrVDFbfm0zXbul/hQZrClxLODfMk9wQf7tlwU1rObVptMUk7vE82CtEnT3HlJtuU5jEZVJJr6j4LvQ==",
   "success": true,
   "projectFilePath": "D:\\c#\\ReCapProject\\Business\\Business.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\samet\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.1\\autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\samet\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\samet\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
