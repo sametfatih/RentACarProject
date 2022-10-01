@@ -1,5 +1,8 @@
+using Autofac.Extensions.DependencyInjection;
+using Autofac;
 using Business.Abstract;
 using Business.Concrete;
+using Business.DependencyResolvers.Autofac;
 using DataAccess.Abstract;
 using DataAccess.Concrete.Entity_Framework;
 using DataAccess.Concrete.EntityFramework;
@@ -9,14 +12,19 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddSingleton<IRentalService,RentalManager>();
-builder.Services.AddSingleton<IRentalDal,EfRentalDal>();
-builder.Services.AddSingleton<ICarService, CarManager>();
-builder.Services.AddSingleton<ICarDal, EfCarDal>();
+//builder.Services.AddSingleton<IRentalService,RentalManager>();
+//builder.Services.AddSingleton<IRentalDal,EfRentalDal>();
+//builder.Services.AddSingleton<ICarService, CarManager>();
+//builder.Services.AddSingleton<ICarDal, EfCarDal>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Host.UseServiceProviderFactory(services =>
+new AutofacServiceProviderFactory()).ConfigureContainer<ContainerBuilder>(builder =>
+{ builder.RegisterModule(new AutofacBusinessmodule()); });
+
 
 var app = builder.Build();
 
