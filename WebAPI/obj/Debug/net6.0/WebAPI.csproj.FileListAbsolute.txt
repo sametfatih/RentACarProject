@@ -70,3 +70,4 @@ D:\c#\ReCapProject\WebAPI\bin\Debug\net6.0\Autofac.Extensions.DependencyInjectio
 D:\c#\ReCapProject\WebAPI\bin\Debug\net6.0\Autofac.Extras.DynamicProxy.dll
 D:\c#\ReCapProject\WebAPI\bin\Debug\net6.0\Castle.Core.dll
 D:\c#\ReCapProject\WebAPI\bin\Debug\net6.0\FluentValidation.dll
+D:\c#\ReCapProject\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
