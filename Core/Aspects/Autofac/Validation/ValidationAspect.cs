@@ -8,16 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Aspects.Autofac
+namespace Core.Aspects.Autofac.Validation
 {
-    public class ValidationAspect :MethodInterception
+    public class ValidationAspect : MethodInterception
     {
         private Type _validatorType;
         public ValidationAspect(Type validatorType)
         {
             if (!typeof(IValidator).IsAssignableFrom(validatorType))
             {
-                throw new System.Exception("Bu bir doğrulama sınıfı değildir.");
+                throw new Exception("Bu bir doğrulama sınıfı değildir.");
             }
 
             _validatorType = validatorType;
