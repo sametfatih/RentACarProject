@@ -24,6 +24,7 @@ namespace Business.Constants
         public static string ModelDetailsListed="Model details listed.";
         public static string UserAdded="User added.";
         public static string CustomerAdded="Customer added.";
+        public static string CustomersListed;
         public static string RentalAdded="Rental added.";
         public static string RentalsListed="Rentals listed.";
         public static string CarImageAdded="Image is  added.";
@@ -37,5 +38,6 @@ namespace Business.Constants
         public static string UserAlreadyExists = "Böyle bir kullanıcı bulunmakta.";
         public static string AccessTokenCreated = "AccessToken oluşturuldu.";
         public static string UsersListed="";
+        public static string RentalDetailListed;
     }
 }

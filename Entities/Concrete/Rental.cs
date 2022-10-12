@@ -17,7 +17,7 @@ namespace Entities.Concrete
 
         public DateTime RentDate { get; set; }
 
-        public DateTime? ReturnDate { get; set; }
+        public DateTime ReturnDate { get; set; }
 
     }
 

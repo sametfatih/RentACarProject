@@ -12,6 +12,7 @@ namespace Business.Abstract
     public interface IRentalService
     {
         IDataResult<List<Rental>> GetAll();
+        IDataResult<List<RentalDetailDTO>> GetAllRentalDetails();
         IResult AddRental(Rental rental);
     }
 }
