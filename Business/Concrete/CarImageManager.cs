@@ -33,7 +33,7 @@ namespace Business.Concrete
                 return result;
             }
 
-            carImage.ImagePath = _fileHelperService.Upload(formFiles,@"www\\Uploads\\Images\\");
+            carImage.ImagePath = _fileHelperService.Upload(formFiles).Message;
             carImage.ImageDate = DateTime.Now;
            _carImageDal.Add(carImage);
 
@@ -56,7 +56,7 @@ namespace Business.Concrete
             if (!result)
             {
            
-                List<CarImage> carImage = new List<CarImage>() { new CarImage { Id = 0, CarId = carId, ImageDate = null, ImagePath = "default.jpg" } };
+                List<CarImage> carImage = new List<CarImage>() { new CarImage { Id = 0, CarId = carId, ImageDate = null, ImagePath = "/images/default.jpg" } };
                 return new SuccessDataResult<List<CarImage>>(carImage);
             }
 

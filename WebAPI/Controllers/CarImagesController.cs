@@ -27,14 +27,14 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result.Message);
         }
-        [HttpPost("getallbycarid")]
-        public IActionResult GetAllByCarId(CarImage carImage)
+        [HttpGet("getallbycarid")]
+        public IActionResult GetAllByCarId(int carId)
         {
-            var result = _carImageService.GetAllImagesByCarId(carImage.CarId);
+            var result = _carImageService.GetAllImagesByCarId(carId);
 
             if (result.Success)
             {
-                return Ok(result.Data);
+                return Ok(result);
             }
             return BadRequest(result.Message);
         }

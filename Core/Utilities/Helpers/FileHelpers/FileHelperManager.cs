@@ -2,41 +2,44 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using Core.Utilities.Results;
 
 namespace Core.Utilities.Helpers.FileHelpers
 {
     public class FileHelperManager : IFileHelperService
     {
-        public string Upload(List<IFormFile> files, string root)
+        private static string _currentFileDirectory = Environment.CurrentDirectory + "\\wwwroot";
+        private static string _folderName = "\\images\\";
+
+        public IResult Upload(List<IFormFile> files)
         {
             StringBuilder builder = new StringBuilder();
 
-            if (files.Count > 0 && files!=null)
+            if (files.Count > 0 && files != null)
             {
-                if (!Directory.Exists(root))
+                if (!Directory.Exists(_currentFileDirectory+ _folderName))
                 {
-                    Directory.CreateDirectory(root);
+                    Directory.CreateDirectory(_currentFileDirectory+ _folderName);
                 }
 
                 foreach (var file in files)
                 {
-
-                
                     string extension = Path.GetExtension(file.FileName);
                     string guid = Guid.NewGuid().ToString();
                     string path = guid + extension;
 
-                    using (Stream fileStream = new FileStream(root + path,FileMode.Create))
+                    using (Stream fileStream = new FileStream(_currentFileDirectory + _folderName + path, FileMode.Create))
                     {
                         file.CopyTo(fileStream);
                         fileStream.Flush();
                     }
-                    return path;
-             }     
+                    return new SuccessResult((_folderName + guid + extension).Replace("\\", "/"));
+                }
             }
-            return null;
+            return new ErrorResult("Resim yüklenmedi");
         }
     }
 }

@@ -29,8 +29,6 @@ namespace WebAPI.Controllers
         [HttpGet("getallcustomerdetails")]
         public IActionResult GetAllCustomerDetails()
         {
-            Thread.Sleep(2000);
-
             var result = _customerService.GetAllCustomerDetails();
             if (result.Success)
             {

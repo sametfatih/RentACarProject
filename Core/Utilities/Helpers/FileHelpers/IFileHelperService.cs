@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Core.Utilities.Results;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Core.Utilities.Helpers.FileHelpers
 {
     public interface IFileHelperService
     {
-        public string Upload(List<IFormFile> file, string root);
+        public IResult Upload(List<IFormFile> files);
   
     }
 }

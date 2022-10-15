@@ -70,3 +70,8 @@ D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\FluentValidation.dll
 D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Features.dll
 D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\System.IO.Pipelines.dll
 D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\Microsoft.AspNetCore.Http.dll
+D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Abstractions.dll
+D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\Microsoft.AspNetCore.WebUtilities.dll
+D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\Microsoft.Extensions.ObjectPool.dll
+D:\c#\ReCapProject\ConsoleUI\bin\Debug\net6.0\Microsoft.Net.Http.Headers.dll
